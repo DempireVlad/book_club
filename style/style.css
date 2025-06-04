@@ -117,18 +117,6 @@ p {
 }
 
 
-ul li {
-    max-width: 389px;
-    /* height: 56px; */
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 140%;
-    letter-spacing: -0.5px;
-    color: #385159;
-
-}
 
 button {
     font-family: 'Martian Mono';
@@ -143,7 +131,7 @@ button {
 }
 
 .coment {
-    width: 970px;
+    max-width: 970px;
     height: 176px;
     font-family: 'Martian Mono';
     font-style: normal;
@@ -153,6 +141,7 @@ button {
     text-align: center;
     letter-spacing: -1px;
     color: #062630;
+
 }
 
 header>div>img {
@@ -209,4 +198,108 @@ header button::after {
     position: absolute;
     transform: translate(16px);
 
+}
+
+.together {
+    padding-block-start: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block-end: 120px;
+}
+
+.together__img,
+.avarage__img {
+    max-width: 520px;
+}
+
+.together__text {
+    max-width: 530px;
+}
+
+.together__text>h2 {
+    margin-block-end: 34px;
+}
+
+.together__text>ul {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+}
+
+
+ul li {
+    max-width: 389px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: -0.5px;
+    color: #385159;
+    padding-left: 42px;
+    /* padding-block-end: 24px; */
+    position: relative;
+}
+
+ul li::before {
+    content: '';
+    display: block;
+    background-image: url(../images/icon-check.svg);
+    background-repeat: no-repeat;
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    /* transform: translate(-42px); */
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.avarage {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.avarage__text>h2 {
+    margin-block-end: 24px;
+    position: relative;
+}
+
+
+.avarage__text {
+    max-width: 540px;
+}
+
+h2>span::after {
+    content: '';
+    display: block;
+    background-image: url(../images/pattern-circle.png);
+    background-repeat: no-repeat;
+    width: 160px;
+    height: 64px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-75%, 0%);
+}
+
+.avarage__sourse_cont {
+    position: relative;
+}
+
+.avarage__sourse{
+    height: 138px;
+    max-width: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 12px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(-70%, 0%);
 }
