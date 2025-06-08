@@ -161,6 +161,7 @@ header {
 
 .join {
     margin-block-start: 80px;
+    padding-block-end: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -174,7 +175,6 @@ header {
 .join>img {
     max-width: 540px;
     height: auto;
-    padding-block-end: 80px;
 }
 
 header a {
