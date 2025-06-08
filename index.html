@@ -7,6 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="./style/reset.css">
   <link rel="stylesheet" href="./style/style.css">
+  <link rel="stylesheet" href="./style/tablet.css">
 
   <title>Frontend Mentor | Tech book club</title>
 </head>
@@ -25,8 +26,7 @@
             Get curated recommendations, join vibrant discussions, and level up your
             skills one chapter at a time.
           </p>
-
-          <button>Review membership options</button>
+          <a href="#membership" >Review membership options</a>
           <div class="icon__people">
             <img src=".//images/first_human.png" alt="#">
             <img src=".//images/second_human.png" alt="#">
@@ -77,9 +77,9 @@
 
 
           <div class="avarage__sourse">
-            <a href=""><img src="./images/logo_ts.png" alt=""></a>
-            <a href=""><img src="./images/logo_git.png" alt=""></a>
-            <a href=""><img src="./images/logo_reac.png" alt=""></a>
+            <a href="*"><img src="./images/logo_ts.png" alt=""></a>
+            <a href="*"><img src="./images/logo_git.png" alt=""></a>
+            <a href="*"><img src="./images/logo_reac.png" alt=""></a>
           </div>
         </div>
 
@@ -121,7 +121,7 @@
       </div>
     </div>
 
-    <div class="container membership">
+    <div id="membership" class="container membership">
       <h2>Membership options</h2>
 
       <div class="all__options">
@@ -131,7 +131,7 @@
           <hr>
           <p>1 book/month</p>
           <p>Online forums</p>
-          <button>Subscribe now</button>
+          <a href="#">Subscribe now</a>
         </div>
         <div class="membership__options membership__options_pro">
           <h3>Pro</h3>
@@ -139,7 +139,7 @@
           <hr>
           <p>2 books/month</p>
           <p>Virtual meetups</p>
-          <button>Subscribe now</button>
+          <a href="#">Subscribe now</a>
         </div>
 
         <div class="membership__options">
@@ -148,11 +148,11 @@
           <hr>
           <p>Team access</p>
           <p>Private sessions</p>
-          <button>Talk to us</button>
+          <a href="#">Talk to us</a>
         </div>
       </div>
     </div>
-    <div class="container">
+    <div class="container coment_all">
       <p class="coment">
         "This book club transformed my technical reading from a solitary
         activity into an enriching community experience. The discussions
@@ -165,12 +165,34 @@
 
   <footer>
     <div class="container">
-      <h2>Ready to debug your reading list?</h2>
+      <div class="debug">
+        <h2>Ready to debug your reading list?</h2>
 
-      <button>Review membership options</button>
-      <p class="developers_200">200+ developers joined already</p>
+        <a class="membership_a" href="#membership">Review membership options</a>
+
+        <div class="icon__people">
+          <img src=".//images/first_human.png" alt="#">
+          <img src=".//images/second_human.png" alt="#">
+          <img src=".//images/third_human.png" alt="#">
+
+          <p class="developers_200">200+ developers joined already</p>
+        </div>
+
+      </div>
       <hr>
-      © 2024 - Tech Book Club
+      <div class="footer__end">
+        <p>© 2024 - Tech Book Club</p>
+
+        <!-- <div>
+       <a class="bluesky" href=""></a>
+       <a class="link"></a>
+     </div> -->
+
+        <ul>
+          <li><a class="bluesky" href=""></a></li>
+          <li><a class="link" href=""></a></li>
+        </ul>
+      </div>
     </div>
   </footer>
 

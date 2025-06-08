@@ -109,6 +109,7 @@ p {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
+    width: 100%;
 }
 
 .icon__people>img:nth-child(2),
@@ -118,7 +119,7 @@ p {
 
 
 
-button {
+a {
     font-family: 'Martian Mono';
     font-style: normal;
     font-weight: 600;
@@ -141,6 +142,7 @@ button {
     text-align: center;
     letter-spacing: -1px;
     color: #062630;
+    position: relative;
 
 }
 
@@ -175,20 +177,20 @@ header {
     padding-block-end: 80px;
 }
 
-header button {
-
+header a {
     margin-block-end: 20px;
     background: #FFF5EF;
     border: 2px solid #062630;
     border-radius: 8px;
-
-    padding-inline-end: 63px;
+    padding-inline-end: 24px;
     padding-block: 20.5px;
     max-width: 380px;
     width: 100%;
+    padding-inline-start: 24px;
+    display: inline-block
 }
 
-header button::after {
+header a::after {
     content: '';
     display: inline-block;
     background-image: url(../images/icon-arrow-down.svg);
@@ -229,7 +231,7 @@ header button::after {
 }
 
 
-ul li {
+main ul li {
     max-width: 389px;
     font-family: 'Inter';
     font-style: normal;
@@ -243,7 +245,7 @@ ul li {
     position: relative;
 }
 
-ul li::before {
+main ul li::before {
     content: '';
     display: block;
     background-image: url(../images/icon-check.svg);
@@ -256,6 +258,35 @@ ul li::before {
     top: 50%;
     transform: translateY(-50%);
 }
+
+header a:hover,
+main .membership__options>a:hover {
+    background: linear-gradient(90deg, #FFE2D1 0%, #FFF5EF 100%);
+}
+
+footer .membership_a:hover {
+    background: linear-gradient(90deg, #385159 0%, #062630 100%);
+}
+
+header a:focus,
+main .membership__options>a:focus {
+    background: linear-gradient(90deg, #FFE2D1 0%, #FFF5EF 100%);
+    outline: 2px solid #385159;
+    border-radius: 4px;
+    outline-offset: 3px;
+
+}
+
+footer .membership_a:focus {
+    background: linear-gradient(90deg, #385159 0%, #062630 100%);
+    outline: 2px solid #ffffff;
+    border-radius: 4px;
+    outline-offset: 3px;
+}
+
+
+
+
 
 .avarage {
     display: flex;
@@ -311,6 +342,10 @@ h2>span::after {
     transform: translate(-70%, 0%);
 }
 
+.avarage__sourse a:hover {
+    transform: scale(1.05);
+}
+
 .steps {
     background-color: #FAF5F3;
     background-image: url(../images/pattern-light-bg.svg), url(../images/pattern-glow.svg);
@@ -319,13 +354,15 @@ h2>span::after {
     background-position: top left, bottom 90% right -400px;
     background-size: cover, auto;
     margin-block-end: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center
 }
 
 .steps>h2 {
     max-width: 512px;
     text-align: center;
     padding-block-end: 64px;
-    margin: 0 auto;
     padding-block-start: 80px;
 }
 
@@ -391,6 +428,7 @@ h2>span::after {
     display: flex;
     justify-content: space-evenly;
     padding-block-end: 80px;
+    width: 100%;
 }
 
 .membership {
@@ -415,6 +453,10 @@ h2>span::after {
 
 }
 
+.membership__options>hr {
+    border: none;
+    border: 1px solid #E6E1DF;
+}
 
 
 .membership__options {
@@ -440,7 +482,7 @@ h2>span::after {
     background-position: top 30% left -60px;
 }
 
-.membership__options>button {
+.membership__options>a {
     width: 238px;
     border: 2px solid #062630;
     border-radius: 8px;
@@ -450,7 +492,7 @@ h2>span::after {
     background-color: #FFF5EF;
 }
 
-.membership__options_pro>button {
+.membership__options_pro>a {
     width: 302px;
     border: 2px solid #062630;
     border-radius: 8px;
@@ -462,4 +504,126 @@ h2>span::after {
     justify-content: space-between;
     align-items: center;
 
+}
+
+.coment::after {
+    content: '';
+    display: block;
+    background-image: url(../images/stars.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 164px;
+    height: 28px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -32px);
+}
+
+.coment_all {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 32px;
+    padding-block-end: 120px;
+}
+
+footer {
+    background-color: #062630;
+    background-image: url(../images/pattern-dark-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.debug>h2 {
+    max-width: 685px;
+    padding-block-end: 40px;
+}
+
+.debug {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-block-start: 80px;
+
+    /* max-width: 753px; */
+}
+
+footer .membership_a {
+    border: 2px solid white;
+    border-radius: 8px;
+    padding-inline-end: 24px;
+    padding-block: 20.5px;
+    max-width: 380px;
+    width: 100%;
+    color: white;
+    margin-block-end: 64px;
+}
+
+footer .membership_a::after {
+    content: '';
+    display: inline-block;
+    background-image: url(../images/icon-arrow-up.svg);
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    transform: translate(16px);
+}
+
+footer .developers_200 {
+    color: white;
+}
+
+hr {
+    margin-block-start: 64px;
+    margin-block-end: 24px;
+    border: 1px solid #385159;
+}
+
+.footer__end {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start
+}
+
+.footer__end>p {
+    color: white;
+    font-family: 'Martian Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: -1px;
+    color: #FFFFFF;
+    padding-block-end: 24px;
+}
+
+.bluesky {
+    background-image: url(../images/logo-bluesky.svg);
+    width: 22px;
+    height: 23px;
+    display: inline-block;
+    background-repeat: no-repeat;
+
+}
+
+.link {
+    background-image: url(../images/logo-linkedin.svg);
+    width: 18px;
+    height: 19px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    padding-left: 24px;
+}
+
+footer ul {
+    display: flex;
+    gap: 24px;
+
+}
+
+footer ul li:hover {
+    opacity: 0.6;
 }
