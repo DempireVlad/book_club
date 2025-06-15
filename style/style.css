@@ -99,7 +99,6 @@ p {
     width: 120px;
     height: 24px;
     background-repeat: no-repeat;
-    /* transform:translate(-100%, -100%); */
     top: -28px;
     left: 0;
 }
@@ -117,13 +116,15 @@ p {
     margin-left: -20px;
 }
 
-main img, .join>img{
+main img,
+.join>img {
     border-radius: 12px;
 }
 
 
 
-a, button {
+a,
+button {
     font-family: 'Martian Mono', monospace;
     font-style: normal;
     font-weight: 600;
@@ -160,7 +161,7 @@ header {
 
 }
 
-header div:first-child{
+header div:first-child {
     padding-block-start: 32px;
 }
 
@@ -300,7 +301,7 @@ footer .membership_a:focus {
     margin-block-end: 120px;
 }
 
-.avarage__text > p{
+.avarage__text>p {
     max-width: 528px;
 }
 
@@ -333,27 +334,19 @@ h2>span::after {
     transform: translate(-75%, 0%);
 }
 
+
 .avarage__sourse_cont {
     position: relative;
 }
 
 .avarage__sourse {
-    height: 138px;
+    max-height: 138px;
     max-width: 120px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-around;
-    gap: 12px;
     position: absolute;
-    bottom: 0;
-    left: 0;
-    transform: translate(-70%, 0%);
+    bottom: 31px;
+    left: -80px;
 }
 
-.avarage__sourse a:hover {
-    transform: scale(1.05);
-}
 
 .steps {
     background-color: #FAF5F3;
@@ -382,7 +375,16 @@ h2>span::after {
     max-width: 226px;
     gap: 23px;
     position: relative;
+    background-image: url(../images/pattern-arrow.svg);
+    background-position: top right;
+    background-repeat: no-repeat;
 }
+
+.steps__text:nth-child(4) {
+    background-image: none;
+}
+
+
 
 .steps__text>p {
     font-family: 'Martian Mono', monospace;
@@ -417,22 +419,7 @@ h2>span::after {
 
 }
 
-.num>p::after {
-    content: '';
-    display: block;
-    background-image: url(../images/pattern-arrow.svg);
-    background-repeat: no-repeat;
 
-    width: 80px;
-    height: 24px;
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-.steps__text:nth-child(4) .num>p::after {
-    background-image: none;
-}
 
 .steps__position {
     display: flex;
@@ -544,10 +531,10 @@ footer {
     background-size: cover;
 
     hr {
-    margin-block-start: 64px;
-    margin-block-end: 24px;
-    border: 1px solid #385159;
-}
+        margin-block-start: 64px;
+        margin-block-end: 24px;
+        border: 1px solid #385159;
+    }
 }
 
 .debug>h2 {
@@ -592,7 +579,7 @@ footer .membership_a::after {
 footer .developers_200 {
     color: white;
 
-    
+
 
 }
 
