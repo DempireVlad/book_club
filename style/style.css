@@ -118,7 +118,7 @@ p {
 
 main img,
 .join>img {
-    border-radius: 12px;
+    border-radius: 25px;
 }
 
 
@@ -132,7 +132,6 @@ button {
     line-height: 130%;
     letter-spacing: -1px;
     color: #062630;
-    text-transform: uppercase;
 
 }
 
@@ -144,7 +143,6 @@ button {
     font-weight: 600;
     font-size: 34px;
     line-height: 130%;
-    text-align: center;
     letter-spacing: -1px;
     color: #062630;
     position: relative;
@@ -465,7 +463,19 @@ h2>span::after {
         color: #062630;
     }
 
+
+
 }
+
+.check {
+    padding-inline-start: 36px;
+     background-image: url(../images/icon-check.svg);
+    background-repeat: no-repeat;
+    background-size: 24px;
+
+}
+
+
 
 .membership__options_pro {
     padding-block: 40px;

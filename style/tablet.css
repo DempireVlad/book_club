@@ -1,8 +1,113 @@
-/* @media (max-width: 1090px) {
-
-  } */
+@media (max-width: 1120px) {
 
 
-
-
+  .container {
+    max-width: 714px;
+    padding-inline: 5px;
+    margin-inline: auto;
   }
+
+  .join {
+    flex-wrap: wrap;
+    gap: 64px;
+    padding-block-start: 64px;
+  }
+  .join>img{
+    max-width: 100%;
+  }
+
+  .join__text {
+    max-width: 680px;
+  }
+
+  .together {
+  padding-block: 80px;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    gap: 40px;
+    align-items: flex-start;
+  }
+
+  .together__text {
+    max-width: 540px;
+}
+
+  main ul li{
+    max-width: 600px;
+  }
+
+  .avarage{
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-block-end: 80px;
+  }
+  .avarage__text{
+    max-width: 100%;
+  }
+  .avarage__text>p{
+    max-width: 100%;
+  }
+  .avarage__sourse{
+    right: 50px;
+    left: auto;
+    bottom: 50px;
+  }
+
+  .avarage__text>h2{
+    max-width: 540px;
+  }
+
+  .together__img, .avarage__img{
+    max-width: 100%;
+  }
+
+  .steps{
+    display: none;
+  }
+
+  .all__options{
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: normal
+  }
+
+  .membership{
+    margin-block-end: 140px;
+  }
+.membership__options{
+  max-width: 340px;
+}
+
+.membership__options>button{
+  width: 292px;
+}
+
+.membership__options_pro{
+  padding-block: 24px;
+  min-height:auto;
+}
+
+.coment{
+  height: auto;
+}
+
+.coment_all{
+  align-items: flex-start;
+  text-align: left;
+  padding-block-end: 80px;
+}
+
+.coment::after {
+left: 0;
+transform: translate(0, -60px);
+
+}
+
+.debug{
+  padding-block-start: 64px;
+}
+
+
+
+
+}
