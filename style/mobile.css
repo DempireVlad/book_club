@@ -73,6 +73,9 @@
         max-width: 334px;
     }
 
+    .together{
+        padding-block-start: 64px;
+    }
 
     .together__text>h2 {
         margin-block-end: 24px;
