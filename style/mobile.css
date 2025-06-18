@@ -1,0 +1,126 @@
+@media (max-width: 730px) {
+
+
+    .container {
+        max-width: 353px;
+    }
+
+    .join {
+        padding-block-start: 48px;
+    }
+
+    header {
+        background-image: url(../images/pattern-light-bg.svg), none;
+    }
+
+
+    h1 {
+        font-family: 'Martian Mono' monospace;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 120%;
+
+    }
+
+    a,
+    button {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 130%;
+        letter-spacing: -1px;
+    }
+
+    .icon__people {
+        height: 62px;
+
+        img {
+            padding-block-end: 11px;
+        }
+    }
+
+
+    h2 {
+        font-weight: 600;
+        font-size: 34px;
+        line-height: 130%;
+        letter-spacing: -2px;
+
+    }
+
+    .avarage {
+        margin-block-end: 64px;
+        padding-block-start: 64px;
+    }
+
+    .avarage__text>p {
+        max-width: 340px;
+    }
+
+    .membership {
+        margin-block-end: 124px;
+    }
+
+    .membership>h2 {
+        margin-block-end: 24px;
+    }
+
+    main ul li{
+        max-width: 330px;
+    }
+
+    .join__text {
+        max-width: 334px;
+    }
+
+
+    .together__text>h2 {
+        margin-block-end: 24px;
+    }
+
+    h2>span::after {
+        background-image: url(../images/pattern-circle_small.png);
+        bottom: 0;
+        left: 0;
+        transform: translate(-5%, 35%);
+    }
+
+    .avarage__sourse {
+        display: none;
+    }
+
+    .coment {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 110%;
+
+    }
+
+
+    .footer__end {
+        flex-direction: column;
+        align-items: center;
+        padding-block-end: 24px;
+
+    }
+
+    .footer__end>p {
+        padding-block-end: 16px;
+    }
+
+    .developers_200 {
+        max-width: 221px;
+        text-align: left;
+    }
+
+    .developers_200::after {
+        left: -4px;
+    }
+
+
+
+
+
+
+
+}

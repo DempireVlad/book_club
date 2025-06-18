@@ -26,6 +26,7 @@
     flex-direction: column-reverse;
     gap: 40px;
     align-items: flex-start;
+    padding-block-end: 0;
   }
 
   .together__text {
@@ -40,6 +41,7 @@
     flex-wrap: wrap;
     gap: 40px;
     margin-block-end: 80px;
+    padding-block-start: 80px;
   }
   .avarage__text{
     max-width: 100%;
@@ -73,6 +75,10 @@
 
   .membership{
     margin-block-end: 140px;
+  }
+
+  .membership>h2{
+    text-align: left;
   }
 .membership__options{
   max-width: 340px;

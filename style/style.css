@@ -159,7 +159,7 @@ header {
 
 }
 
-header div:first-child {
+header .container {
     padding-block-start: 32px;
 }
 
@@ -297,6 +297,7 @@ footer .membership_a:focus {
     justify-content: space-between;
     align-items: center;
     margin-block-end: 120px;
+    padding-block-start: 120px;
 }
 
 .avarage__text>p {
